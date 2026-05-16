@@ -42,7 +42,10 @@ Testing or release work must also read:
 
 Always start from `master`, pull latest changes, create a focused branch, make small commits, test, then merge only after the task is complete.
 
+## Build Order Rule
+
+For SaaS-style projects, build the authentication and protected app shell before core modules. Users must be able to log in as seeded roles, switch accounts or tenants where relevant, and navigate empty protected pages before billing, CRM, reporting, AI, or admin functionality is implemented.
+
 ## AI Feature Rule
 
 Every product should include useful AI assistance, but AI must not replace core business logic, security checks, payment truth, permissions, or auditability.
-

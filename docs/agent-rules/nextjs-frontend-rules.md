@@ -40,6 +40,15 @@ These rules apply to Next.js frontend projects in this portfolio system.
 - Do not hide API problems behind fake frontend data.
 - All API calls should go through a shared Axios client.
 
+## Auth Shell Rules
+
+- Build the login screen and protected layout before core feature pages.
+- Login must support seeded demo users for the major backend roles.
+- Store auth state in one clear provider or state store, not scattered page state.
+- Add account or tenant switching early where the backend supports tenant context.
+- Add sidebar navigation and empty protected pages for planned modules before implementing module CRUD.
+- Empty pages should explain what backend capability is needed next and must still use the real protected app shell.
+
 ## TypeScript Rules
 
 - Page files should not own shared domain types.
