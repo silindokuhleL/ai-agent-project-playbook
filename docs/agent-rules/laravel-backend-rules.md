@@ -22,6 +22,15 @@ These rules apply to Laravel REST API projects in this portfolio system.
 - Shared behavior should be extracted into reusable traits, services, actions, or support classes.
 - Avoid duplicating tenant, logging, response, and permission logic across controllers.
 
+## Auth-First Rules
+
+- Add real API authentication before core business modules.
+- Auth endpoints must include login, logout, and authenticated user summary.
+- Use form requests for auth validation.
+- Use API resources for authenticated user and session responses.
+- Seed multiple demo users for different roles so the frontend can test role-based experiences early.
+- Auth events such as login and registration should be auditable.
+
 ## Tenant Rules
 
 - Tenant-aware projects must include tenant stubs early.
@@ -63,4 +72,3 @@ These rules apply to Laravel REST API projects in this portfolio system.
 ## Cleanup Rule
 
 - Check and remove or replace default demo files such as `ExampleController` before the project is considered portfolio-ready.
-

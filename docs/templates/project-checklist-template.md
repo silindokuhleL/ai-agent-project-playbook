@@ -17,8 +17,11 @@ Use this checklist when starting a new project.
 - [ ] MySQL configured.
 - [ ] Redis configured.
 - [ ] Auth configured.
+- [ ] Login, logout, and authenticated user summary endpoints added.
+- [ ] Multiple seeded users can log in with different roles.
 - [ ] RBAC configured.
 - [ ] Tenant strategy documented if needed.
+- [ ] Account or tenant context resolver added if needed.
 - [ ] Services added for business logic.
 - [ ] API Resources added for responses.
 - [ ] Seeders and factories added.
@@ -34,6 +37,12 @@ Use this checklist when starting a new project.
 - [ ] Coss UI/Base UI approach documented.
 - [ ] Axios API client added.
 - [ ] Shared `types/` folder added.
+- [ ] Login screen added.
+- [ ] Auth state provider or store added.
+- [ ] Protected app shell added.
+- [ ] Sidebar navigation added.
+- [ ] Account or tenant switcher added if relevant.
+- [ ] Empty protected pages added before core module CRUD.
 - [ ] Reusable UI components added.
 - [ ] Loading, empty, error, success, and disabled states added.
 - [ ] AI assist UI added where useful.
@@ -50,4 +59,3 @@ Use this checklist when starting a new project.
 - [ ] Database diagram where relevant.
 - [ ] Case study.
 - [ ] README updated.
-
